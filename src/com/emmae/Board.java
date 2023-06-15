@@ -218,19 +218,19 @@ public class Board extends JPanel implements ActionListener {
 		public void keyPressed(KeyEvent e) {
 			int key = e.getKeyCode();
 			
-			if ((key == KeyEvent.VK_LEFT) && (previousDirection != Direction.RIGHT)) {
+			if ((key == KeyEvent.VK_H) && (previousDirection != Direction.RIGHT)) {
 				nextDirection = Direction.LEFT;
 			}
 			
-			if ((key == KeyEvent.VK_RIGHT) && (previousDirection != Direction.LEFT)) {
+			if ((key == KeyEvent.VK_L) && (previousDirection != Direction.LEFT)) {
 				nextDirection = Direction.RIGHT;
 			}
 			
-			if ((key == KeyEvent.VK_UP) && (previousDirection != Direction.DOWN)) {
+			if ((key == KeyEvent.VK_K) && (previousDirection != Direction.DOWN)) {
 				nextDirection = Direction.UP;
 			}
 			
-			if ((key == KeyEvent.VK_DOWN) && (previousDirection != Direction.UP)) {
+			if ((key == KeyEvent.VK_J) && (previousDirection != Direction.UP)) {
 				nextDirection = Direction.DOWN;
 			}
 			
